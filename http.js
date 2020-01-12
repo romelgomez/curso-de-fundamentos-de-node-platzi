@@ -1,6 +1,8 @@
 const http = require("http");
 
 const router = (req, res) => {
+  console.log("req.url", req.url);
+
   switch (req.url) {
     case "/hola":
       res.writeHead(201);
